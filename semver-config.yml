@@ -1,0 +1,16 @@
+scopes:
+  tag-version: true
+  tag-prefix: 'v'
+  list:
+    - key: src
+      files:
+      - "src/**"
+      versioning:
+        file: src/version.json     
+        changelog: src/CHANGELOG.md
+    - key: tfm
+      files:
+      - "terraform/**"
+      versioning:
+        file: terraform/version.json
+        changelog: terraform/CHANGELOG.md
